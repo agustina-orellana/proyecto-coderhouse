@@ -1,19 +1,19 @@
 {
-  "name": "proyecto-coder",
+  "name": "proyecto",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/agustina-orellana/proyecto-coderhouse.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/contact.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/agustina-orellana/proyecto-coderhouse/issues"
-  },
-  "homepage": "https://github.com/agustina-orellana/proyecto-coderhouse#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
 }
