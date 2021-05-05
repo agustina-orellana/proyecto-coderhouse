@@ -4,14 +4,26 @@ body{
 
 .header{
     width: 100%;
-    background-color:#4e94ae;
+    padding: 0.5rem 0;
+    color: white;
+    background: #000000;
+    background: -webkit-linear-gradient(to left, #434343, #000000);
+    background: linear-gradient(to left, #434343, #000000); 
 }
 
 #btn-menu {
     display: none;
+
 }
+
+.icono-menu{
+    margin-bottom: 1rem !important;
+    border: none !important;
+}   
+
 .header label {
     display: none;
+    font-family: Georgia;
     width: 30px;
     height: 30px;
     padding: 10px;
@@ -35,7 +47,7 @@ body{
 }
 
 .menu li:hover {
-   background: rgba(0,0,0,0.3);
+   background: rgb(78, 77, 77);
 }
 
 .menu li a {
@@ -43,6 +55,10 @@ body{
     padding: 15px 20px;
     color: #fff;
     text-decoration: none;
+    font-family:Georgia;
+    font-size: 1.25rem;
+
+
 }
  
 
@@ -53,9 +69,11 @@ body{
 
     .menu {
         position:absolute;
-        background-color:#4f8ea5ce;
+        background-color:black;
         width: 70%;
         margin-left: -70%;
+        z-index: 999;
+        color: black;
     }
 
     .menu ul {
@@ -69,5 +87,5 @@ body{
     #btn-menu:checked ~ .menu {
         margin: 0;
     }
-    
+
 }
